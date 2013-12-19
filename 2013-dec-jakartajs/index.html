@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>ReactJS | A Story About JSConf Asia 2013, JSX, Component, and Virtual DOM</title>
+
+  <!-- Font stylesheet -->
+  <link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/hash/deck.hash.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/hbl.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <h1>
+        <div>ReactJS</div>
+        <div class="hbl-main-subtitle">A Story About JSConf Asia 2013, JSX, Component, and Virtual DOM</div>
+        <div class="hbl-main-subtitle">Hafiz Badrie Lubis - <a href="http://www.twitter.com/hafizbadrie">@hafizbadrie</a></div>
+      </h1>
+    </section>
+
+    <section class="slide">
+      <h2>Whoami</h2>
+      <ul class="hbl-ul-nonode">
+        <li class="slide hbl-bigfont">A Ruby and Javascript happy programmer</li>
+        <li class="slide hbl-bigfont">Lead Developer at The Jakarta Post Digital</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>JSConf Asia 2013</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Statistics</h2>
+      <ul class="slide hbl-ul-nonode">
+        <li>NodeJS <strong class="hbl-white">(7 presentations)</strong></li>
+        <li>Javascript library <strong class="hbl-white">(3 presentations)</strong></li>
+        <li>CSS <strong class="hbl-white">(2 presentations)</strong></li>
+        <li>How to code with JS <strong class="hbl-white">(2 presentations)</strong></li>
+        <li>Game <strong class="hbl-white">(1 presentation)</strong></li>
+        <li>DevOps <strong class="hbl-white">(1 presentation)</strong></li>
+        <li>Web Performance <strong class="hbl-white">(1 presentation)</strong></li>
+        <li>Mobile device <strong class="hbl-white">(1 presentation)</strong></li>
+        <li>Web trend in China <strong class="hbl-white">(1 presentation)</strong></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Speakers - 1</h2>
+      <div class="slide">
+        <div class="hbl-speakers-row">
+          <div class="hbl-speaker">
+            <img src="speakers/tim_park.png" width="150" />
+            TIM PARK
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/emily_stark.png" width="160" />
+            EMILY STARK
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/charlie_crane.png" width="160" />
+            CHARLIE CRANE
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/alex_dickson.png" width="160" />
+            ALEX DICKSON
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/jakob_mattsson.png" width="160" />
+            JAKOB MATTSSON
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="hbl-speakers-row">
+          <div class="hbl-speaker">
+            <img src="speakers/john_britton.png" width="160" />
+            JOHN BRITTON
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/michal_budzynski.png" width="160" />
+            MICHAL BUDZYNSKI
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/simon_swain.png" width="160" />
+            SIMON SWAIN
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/jp_de_guzman.png" width="160" />
+            JP DE GUZMAN
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/brian_chirls.png" width="160" />
+            BRIAN CHIRLS
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Speakers - 2</h2>
+      <div class="slide">
+        <div class="hbl-speakers-row">
+          <div class="hbl-speaker">
+            <img src="speakers/shi_chuan.png" width="160" />
+            SHI CHUAN
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/alex_maccaw.png" width="160" />
+            ALEX MACCAW
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/lea_verou.png" width="160" />
+            LEA VEROU
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/mrdoob_ricardo_cabello.png" width="160" />
+            MRDOOB RICARDO CABELLO
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/eiji_kitamura.png" width="160" />
+            EIJI KITAMURA
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="hbl-speakers-row">
+          <div class="hbl-speaker">
+            <img src="speakers/vikram_verma.png" width="160" />
+            VIKRAM VERMA
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/anand_agrawal.png" width="160" />
+            ANAND AGRAWAL
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/andy_hall.png" width="160" />
+            ANDY HALL
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/pete_hunt.png" width="160" />
+            PETE HUNT
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Favorite Presentations</h2>
+      <div class="slide">
+        <div class="hbl-speakers-row">
+          <div class="hbl-speaker">
+            <img src="speakers/eiji_kitamura.png" width="160" />
+            EIJI KITAMURA
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/brian_chirls.png" width="160" />
+            BRIAN CHIRLS
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/john_britton.png" width="160" />
+            JOHN BRITTON
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/michal_budzynski.png" width="160" />
+            MICHAL BUDZYNSKI
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/simon_swain.png" width="160" />
+            SIMON SWAIN
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="hbl-speakers-row">
+          <div class="hbl-speaker">
+            <img src="speakers/jp_de_guzman.png" width="160" />
+            JP DE GUZMAN
+          </div>
+          <div class="hbl-speaker">
+            <img src="speakers/pete_hunt.png" width="160" />
+            PETE HUNT
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h1>console.log('ReactJS');</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Why React</h2>
+      <p class="slide">"React is a JavaScript library for creating user interfaces by Facebook and Instagram. Many people choose to think of React as the V in MVC."</p>
+      <p class="slide">"Building large applications with data that changes over time"</p>
+      <div class="hbl-space"></div>
+      <div class="hbl-space"></div>
+      <div class="hbl-space"></div>
+      <ul class="hbl-ul-nonode">
+        <li class="slide hbl-highlight">Break application into components, not templates</li>
+        <li class="slide hbl-highlight">Re-render whole app on every update</li>
+        <li class="slide hbl-highlight">Virtual DOM</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Component</h2>
+      <div class="slide">
+        <img src="assets/components.png" />
+      </div>
+      <div class="slide">
+        <img src="assets/components-example.png" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Component - Code</h2>
+      <pre>
+        <code>
+/** @jsx React.DOM */
+var ChatBox = React.createClass({
+  render: function() {
+    var chat_line = function(sent_chat) {
+      return &lt;li&gt;{sent_chat.itemText} &lt;div id={sent_chat.itemId}&gt;{sent_chat.commandResult}&lt;/div&gt;&lt;/li&gt;;
+    }
+    return &lt;ul id="chats"&gt;{this.props.items.map(chat_line)}&lt;/ul&gt;;
+  }
+});
+
+var ChatPanel = React.createClass({
+  getInitialState: function() {return {items:[], text:''};},
+  getDefaultProps: function() {return {username:'', authKey:''};},
+  handleLogout: function(e) {/* .. */},
+  onChange: function(e) {/* .. */},
+  onClick: function(e) {/* .. */},
+  render: function() {
+    return (
+      /* .. */
+      &lt;ChatBox items={this.state.items} /&gt;
+      /* .. */
+    );
+  }
+  /* ... */;
+});
+        </code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Component - Why</h2>
+      <ul class="hbl-ul-nonode">
+        <li class="slide">Reusable</li>
+        <li class="slide">Separation of concerns</li>
+        <li class="slide">Simple</li>
+        <li class="slide">Utilize JSX</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Component - JSX</h2>
+      <p class="slide hbl-quote">"JSX is a JavaScript XML syntax transform recommended for use with React"</p>
+      <pre class="slide">
+        <code>
+/** @jsx React.DOM */
+var HelloMessage = React.createClass({
+  render: function() {
+    return &lt;div&gt;{'Hello ' + this.props.name}&lt;/div&gt;;
+  }
+});
+
+React.renderComponent(&lt;HelloMessage name="John" /&gt;, mountNode);
+        </code>
+      </pre>
+      <p class="slide hbl-highlight">
+        Faster, easier, and more comfortable
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Virtual DOM</h2>
+      <p class="slide hbl-quote">"When the data changes, React conceptually hits the "refresh" button, and knows to only update the changed parts."</p>
+      <p class="slide">But why? Isn't it expensive?</p>
+      <ul class="hbl-ul-nonode">
+        <li class="slide">ReactJS component is loosely coupled</li>
+        <li class="slide">It's the easiest way to handle data changes</li>
+        <li class="slide">Yes, it's expensive, but that's when Virtual DOM taking action</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Virtual DOM</h2>
+      <img src="assets/reactjs-lifecycle.png" />
+    </section>
+
+    <section class="slide">
+      <h1><a href='http://hackerchat.hbl' target="_blank">Demo</a></h1>
+    </section>
+
+    <section class="slide">
+      <h2>Resources</h2>
+      <ul class="hbl-resources hbl-ul-nonode">
+        <li>ReactJS Website - <a href="http://facebook.github.io/react" target="_blank">http://facebook.github.io/react</a></li>
+        <li>ReactJS Github Repository - <a href="http://github.com/facebook/react" target="_blank">http://github.com/facebook/react</a></li>
+        <li>JSXHint, ReactJS and Pre-Mature Optimization - <a href="http://tck.io/posts/jsxhint_and_react.html" target="_blank">http://tck.io/posts/jsxhint_and_react.html</a></li>
+        <li>Intro to the React Framework - <a href="http://dev.tutsplus.com/tutorials/intro-to-the-react-framework--net-35660" target="_blank">http://dev.tutsplus.com/tutorials/intro-to-the-react-framework--net-35660</a></li>
+        <li>JSConf Asia 2013 slides - <a href="https://github.com/rstacruz/wiki/wiki/JSConf.Asia-2013-slides" target="_blank">https://github.com/rstacruz/wiki/wiki/JSConf.Asia-2013-slides</a></li>
+        <li>Pete Hunt JSConf Asia 2013 slides - <a href="http://www.slideshare.net/floydophone/react-preso-v2" target="_blank">http://www.slideshare.net/floydophone/react-preso-v2</a></li>
+        <li>Demo Repository - <a href="https://github.com/hafizbadrie/hackerchat" target="_blank">https://github.com/hafizbadrie/hackerchat</a><li>
+        <li>Presentation Slides - <a href="https://github.com/hafizbadrie/2013-dec-jakartajs" target="_blank">https://github.com/hafizbadrie/2013-dec-jakartajs</a><li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>
+        Gratitude
+        <div class="hbl-main-subtitle">@hafizbadrie (twitter)</div>
+        <div class="hbl-main-subtitle">http://github.com/hafizbadrie (github)</div>
+        <div class="hbl-main-subtitle">hafizbadrie@gmail.com (e-mail)</div>
+      </h1>
+    </section>
+
+    <!-- End slides. -->
+
+  <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- deck.hash snippet -->
+    <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script type="text/javascript" src="assets/sockjs-0.3.min.js"></script>
+<script type="text/javascript" src="assets/slide-websocket.js"></script>
+</body>
+</html>
