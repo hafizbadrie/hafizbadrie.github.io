@@ -1,4 +1,4 @@
-var sockjs = new SockJS('http://localhost:3000/sock');
+var sockjs = new SockJS('http://119.235.29.194:3000/sock');
 
 document.getElementById('next').onclick = function(e) {
 	e.preventDefault();
