@@ -1,19 +1,38 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
+### your site title here
 title: hafiz badrie lubis
 email: 
 description: > # this means to ignore newlines until "baseurl:"
-  I love sotware engineering, music, sports, psychology, and math
+  I love software engineering, music, sports, psychology, and math
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://hafizbadrie.com" # the base hostname & protocol for your site
 twitter_username: hafizbadrie
 github_username:  hafizbadrie
 
-# Build settings
+highlighter: rouge
 markdown: kramdown
+### exclude the instructions / write-up in the README.md
+
+# Tracker
+analytics: UA-46910078-1
+
+#optimization
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+  
+
+sass:
+ style: compressed
+
+exclude:
+- README.md
+
+
+gems: [jekyll-seo-tag, jekyll-paginate]
