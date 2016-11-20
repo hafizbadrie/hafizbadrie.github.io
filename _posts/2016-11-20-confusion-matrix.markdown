@@ -3,6 +3,7 @@ layout: post
 title: "Confusion Matrix"
 date: 2016-11-20 08:10:00 +0700
 category: machine-learning
+comments: true
 ---
 As one of the beginnings of machine learning course in the office, it's important to know what are the metrics that we need to observe to define our machine learning model.
 **Accuracy** and **Precision** are the examples. But how can we measure the metrics? Then, we need to prepare our [**Confusion Matrix**](https://en.wikipedia.org/wiki/Confusion_matrix){:target="_blank"}.
@@ -63,5 +64,14 @@ Since we already have the result of the test, now it's time for the metrics.
     ```
 
     In our case, the model accuracy will be: `5 / 8 = 0.625`
+
+2. **Precision**
+  This metric will tell you how good the model is in predicting the **true prediction**.
+
+    ```
+    Precision = No. of True Positive / (No. of True Positive + No. of False Positive)
+    ```
+
+    In our case, the model precision will be: `4 / (4 + 2) = 0. 667`
 
 That's all folks, I hope it's useful. :)
