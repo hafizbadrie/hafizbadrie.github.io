@@ -109,7 +109,8 @@ as I'm still trying to undestand it comprehensively.
 
 I think it will be very interesting if we can practice it with a bigger dataset.
 So, let's practice our understanding about those 4 metrics with [this data](http://hafizbadrie.com/archives/2016/11/test-result.csv){:target="_blank"}.
-This is [my result](http://hafizbadrie.com/archive/2016/11/confusion-matrix.csv){:target="_blank"}. What's yours?
+
+This is [my result](http://hafizbadrie.com/archives/2016/11/confusion-matrix.csv){:target="_blank"}, what's yours?
 
 *(Thanks to [Fajri Koto](https://www.linkedin.com/in/fajri-koto-02705860){:target="_blank"} and [Yahya Eru Cakra](https://www.linkedin.com/in/erocakra){:target="_blank"} for letting me use their presentation and data as the main source of this post)*
 
