@@ -1,0 +1,8 @@
+True Negative,35
+False Positive,14
+False Negative,9
+True Positive,42
+Accuracy,0.77
+Precision,0.75
+Recall,0.8235
+Specificity,0.7143

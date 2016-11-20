@@ -4,10 +4,11 @@ title: "Confusion Matrix"
 date: 2016-11-20 08:10:00 +0700
 category: machine-learning
 ---
-As one of the beginnings of machine learning course in the office, it's important to know what are the metrics that we need to observe to define our machine learning model.
-**Accuracy** and **Precision** are the examples. But how can we measure the metrics? Then, we need to prepare our [**Confusion Matrix**](https://en.wikipedia.org/wiki/Confusion_matrix){:target="_blank"}.
+As one of the beginning steps in machine learning, it's important to know what are the metrics that we need to observe to measure our machine learning model's performance.
+**Accuracy** and **Precision** are the examples. But how can we measure the metrics? 
+Let's prepare our [**Confusion Matrix**](https://en.wikipedia.org/wiki/Confusion_matrix){:target="_blank"}.
 
-One of the stages in building the model is to **test* the model's prediction against the actual data. Suppose that our test result is like this:
+One of the stages in building the model is to **test** the model's prediction against the actual data. Suppose that our test result is like this:
 
 |------------|---|---|---|---|---|---|---|---|
 | Prediction | 1 | 0 | 1 | 0 | 1 | 1 | 1 | 1 |
@@ -101,4 +102,16 @@ Since we already have the result of the test, now it's time for the metrics.
 
     With that kind of performance, I can't imagine how big the false alarm will be for the system owner. :)
 
+Aside from those 4 metrics, there are actually 2 metrics more like **F-Measure** and **B-Acc**. However, I won't cover it in this post,
+as I'm still trying to undestand it comprehensively.
+
+## Try It Out
+
+I think it will be very interesting if we can practice it with a bigger dataset.
+So, let's practice our understanding about those 4 metrics with [this data](http://hafizbadrie.com/archives/2016/11/test-result.csv){:target="_blank"}.
+This is [my result](http://hafizbadrie.com/archive/2016/11/confusion-matrix.csv){:target="_blank"}. What's yours?
+
+*(Thanks to [Fajri Koto](https://www.linkedin.com/in/fajri-koto-02705860){:target="_blank"} and [Yahya Eru Cakra](https://www.linkedin.com/in/erocakra){:target="_blank"} for letting me use their presentation and data as the main source of this post)*
+
 That's all folks, I hope it's useful. :)
+
