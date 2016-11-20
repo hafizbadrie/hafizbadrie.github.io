@@ -53,7 +53,7 @@ To easily describe the situation from above table, these are the commonly used t
 4. **True Positive**  
   When our model *predict* that it is 1, and the *actual* data says it is also 1.
 
-Above terminologies are actually very helpful for us to get a better understanding as to what actually the metrics are trying to measure.
+Above terminologies are actually very helpful for us to get a better understanding as to what actually the metrics that we are trying to measure.
 These are the metrics that I'm talking about.
 
 1. **Accuracy**  
