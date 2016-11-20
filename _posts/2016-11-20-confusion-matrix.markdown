@@ -39,7 +39,7 @@ We can transform the table into another form of table that we call **confusion m
   </tr>
 </table>
 
-To easily describe the situation from above table, these are the terminologies commonly used:
+To easily describe the situation from above table, these are the commonly used terminologies:
 
 1. **True Negative**  
   When our model *predict* that it is 0, and the *actual* data says it is also 0.
@@ -54,7 +54,7 @@ To easily describe the situation from above table, these are the terminologies c
   When our model *predict* that it is 1, and the *actual* data says it is also 1.
 
 Above terminologies are actually very helpful for us to get a better understanding as to what actually the metrics are trying to measure.
-Since we already have the result of the test, now it's time for the metrics.
+These are the metrics that I'm talking about.
 
 1. **Accuracy**  
   This is actually the total portion of model's correct prediction.
@@ -114,5 +114,5 @@ This is [my result](http://hafizbadrie.com/archives/2016/11/confusion-matrix.csv
 
 *(Thanks to [Fajri Koto](https://www.linkedin.com/in/fajri-koto-02705860){:target="_blank"} and [Yahya Eru Cakra](https://www.linkedin.com/in/erocakra){:target="_blank"} for letting me use their presentation and data as the main source of this post)*
 
-That's all folks, I hope it's useful. :)
+I think that's all what I want to share through this post. I hope it's useful. :)
 
