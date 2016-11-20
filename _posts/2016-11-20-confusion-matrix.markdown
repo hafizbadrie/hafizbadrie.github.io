@@ -75,17 +75,30 @@ Since we already have the result of the test, now it's time for the metrics.
     So if we have a spam detection system with precision **0.667**,
     we can conclude that **every time the system says it's a spam**, then 66.7% of the time, the prediction is correct.
 
-3. **Recall (Sensitivity)**
+3. **Recall (Sensitivity)**  
   This metric will tell you how good the model is in predicting the **positives** data.
-  The bigger the result, it will tell us that it's 
 
     ```
     Recall = No. of True Positive / (No. of True Positive + No. of False Negative)
     ```
 
-    In our case, the model recall will be: `4 / (4 + 1) = 0.8`. 
+    In our case, the model recall will be: `4 / (4 + 1) = 0.8`.
     If our spam detection system has a recall **0.8**,
     we can conclude that if we have actual datasets consiting of 100 spam comments and 200 ham comments,
-    then potentially it could only detect 80 spam comments of out 100 spam comments.
+    then potentially it could only detect 80 spam comments (80% probability) out of 100 spam comments.
+
+4. **Specificity**  
+  This metric will tell you how good the model is in predicting the **negatives** data.
+
+    ```
+    Specificity = No. of True Negative / (No. of True Negative + No. of False Positive)
+    ```
+
+    In our case, the modell specificity will be: `1 / (1 + 2) = 0.33`.
+    If our spam detection system has a specifity **0.33**,
+    we can conclude that if we have actual datasets consiting of 100 spam comments and 200 ham comments,
+    then potentially it could only detect 66 ham comments (33% probability) out of 200 ham comments.
+
+    With that kind of performance, I can't imagine how big the false alarm will be for the system owner. :)
 
 That's all folks, I hope it's useful. :)
