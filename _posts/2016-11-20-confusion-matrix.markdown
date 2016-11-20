@@ -3,7 +3,6 @@ layout: post
 title: "Confusion Matrix"
 date: 2016-11-20 08:10:00 +0700
 category: machine-learning
-comments: true
 ---
 As one of the beginnings of machine learning course in the office, it's important to know what are the metrics that we need to observe to define our machine learning model.
 **Accuracy** and **Precision** are the examples. But how can we measure the metrics? Then, we need to prepare our [**Confusion Matrix**](https://en.wikipedia.org/wiki/Confusion_matrix){:target="_blank"}.
@@ -65,13 +64,28 @@ Since we already have the result of the test, now it's time for the metrics.
 
     In our case, the model accuracy will be: `5 / 8 = 0.625`
 
-2. **Precision**
-  This metric will tell you how good the model is in predicting the **true prediction**.
+2. **Precision**  
+  This metric will tell you how good the model is in predicting the correct **true prediction**.
 
     ```
     Precision = No. of True Positive / (No. of True Positive + No. of False Positive)
     ```
 
-    In our case, the model precision will be: `4 / (4 + 2) = 0. 667`
+    In our case, the model precision will be: `4 / (4 + 2) = 0. 667`.
+    So if we have a spam detection system with precision **0.667**,
+    we can conclude that **every time the system says it's a spam**, then 66.7% of the time, the prediction is correct.
+
+3. **Recall (Sensitivity)**
+  This metric will tell you how good the model is in predicting the **positives** data.
+  The bigger the result, it will tell us that it's 
+
+    ```
+    Recall = No. of True Positive / (No. of True Positive + No. of False Negative)
+    ```
+
+    In our case, the model recall will be: `4 / (4 + 1) = 0.8`. 
+    If our spam detection system has a recall **0.8**,
+    we can conclude that if we have actual datasets consiting of 100 spam comments and 200 ham comments,
+    then potentially it could only detect 80 spam comments of out 100 spam comments.
 
 That's all folks, I hope it's useful. :)
