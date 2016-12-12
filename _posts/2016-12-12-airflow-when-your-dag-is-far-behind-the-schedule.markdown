@@ -6,6 +6,7 @@ category: airflow
 ---
 [Airflow](http://nerds.airbnb.com/airflow/){:target="_blank"} is a workflow management tool built by [Airbnb](http://airbnb.io){:target="_blank"}. This open source project has been a very important tool in our organisation.
 At first, we used that only for our ETL, but now we've expanded its usage to almost all scheduled jobs that we have.
+
 The power of this tool are its capability to schedule jobs and make the execution distributable across instances. When we're talking about schedule,
 sometimes we have to deal with unexpected problems that affecting the job's schedule. It's relatively okay when the job is behind schedule for the unit of minutes,
 but what if it's left behind for hours or even days? It's frustrating. We're aware that there's no easy way to deal with this situation, it still requires effort and time.
