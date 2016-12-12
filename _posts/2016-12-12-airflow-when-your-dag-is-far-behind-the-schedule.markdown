@@ -12,7 +12,7 @@ sometimes we have to deal with unexpected problems that affecting the job's sche
 but what if it's left behind for hours or even days? It's frustrating. We're aware that there's no easy way to deal with this situation, it still requires effort and time.
 So, this time, I would like to share about our effort to, at least, make it less painful.
 
-## What is airflow?
+## Airflow components
 
 To give you a little bit of context, airflow actually have so many important components,
 but to simplify my explanation I will only talk about **DAG**, **Task Instance**, **Scheduler**, **Worker**.
