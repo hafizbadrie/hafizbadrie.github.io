@@ -60,7 +60,7 @@ Above query will produce this data:
 | click_event | top_nav | [{item_id=12345, position=1}, {item_id=67890, position=2}, {item_id=54321, position=3}] |
 
 With that query, you used `json_extract_scalar` function that will parse the json string and it will return as `varchar`.
-The other one is `json_extract`. It also parse the json string and it will return as `json`. For more information, you can visit [this page](https://prestodb.io/docs/current/functions/json.html){:target="_blank"}
+The other one is `json_extract`. It also parse the json string, but it will return as `json`. For more information, you can visit [this page](https://prestodb.io/docs/current/functions/json.html){:target="_blank"}
 
 ### 2. Break the array into rows
 
