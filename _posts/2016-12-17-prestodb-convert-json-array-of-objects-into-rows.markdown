@@ -11,7 +11,7 @@ However, that json data is a string, how can you do that?
 
 Let's have an example of JSON data that we'd like to query:
 
-```JSON
+{% highlight javascript %}
 {
   "event": "click_event",
   "properties": {
@@ -29,7 +29,7 @@ Let's have an example of JSON data that we'd like to query:
     ]
   }
 }
-```
+{% endhighlight %}
 
 Later, you want to execute a query that will produce data like this:
 
@@ -44,14 +44,14 @@ But, before we get there, I'm going to build the SQL step by step, so that you c
 
 ### 1. Convert array of objects into array of map
 
-```SQL
+{% highlight sql %}
 SELECT
   json_extract_scalar(properties, '$.event') AS event,
   json_extract_scalar(properties, '$.section') AS section,
   CAST(json_extract(properties, '$.items') AS ARRAY<MAP<VARCHAR, VARCHAR>>) AS items
 FROM
   events
-```
+{% endhighlight %}
 
 Above query will produce this data:
 
@@ -66,7 +66,7 @@ The other one is `json_extract`. It also parse the json string, but it will retu
 
 In this part, you're going to use `UNNEST` function to break down the array object into records or rows.
 
-```SQL
+{% highlight sql %}
 SELECT
   event,
   section,
@@ -81,7 +81,7 @@ FROM
     events
 )
 CROSS JOIN UNNEST(items) AS items(item)
-```
+{% endhighlight %}
 
 The result of that query is:
 
@@ -97,7 +97,7 @@ As stated in the documentation, `UNNEST` will expand the array object into a rel
 
 This is the end part, where you'll get each value of the map (item_id and position) so that will give you the same result as you expected.
 
-```SQL
+{% highlight sql %}
 SELECT
   event,
   section,
@@ -113,8 +113,7 @@ FROM
     events
 )
 CROSS JOIN UNNEST(items) AS items(item)
-
-```
+{% endhighlight %}
 
 That query will produce this data:
 

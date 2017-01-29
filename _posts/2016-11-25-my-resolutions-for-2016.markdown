@@ -11,22 +11,25 @@ To have a 1 year long self goal doesn't really make sense for me. But not this y
 I wanted a change in me, it was **to be a better learner**. So I decided to have some resolutions.
 I realised that so many resolutions will leave me with nothing but no results, so I started small with 2 resolutions.
 
-## 1. Read 5 books
+### 1. Read 5 books
 
 To be honest, I really hated reading books. I knew I had to learn, but I was just so lazy to do that (oh dear, what an idiot).
 So, I started to read more, either it was book, blog post, newspaper, etc. It was good, I was getting better for a lot of things.
 Then, I wanted that attitude to present in me at all time, and to have reading target every year sounded a good idea. So, this year I hoped I could read 5 books.
 
-<img src="http://hafizbadrie.com/archives/2016/11/2016-resolutions-book.jpg" />
-<img src="https://images-na.ssl-images-amazon.com/images/I/51eqZ7o8PUL._SX326_BO1,204,203,200_.jpg" width="45%" style="float: left; margin-right: 10px;" />
-<img src="http://www.predictiveanalyticsworld.com/book/images/siegel-book-cover2.jpg" width="45%" style="float: left;" />
-<div style="clear: both;"></div>
+<div class="img_row">
+  <img class="col three" src="http://hafizbadrie.com/archives/2016/11/2016-resolutions-book.jpg" />
+</div>
+<div class="img_row">
+  <img class="col one" src="https://images-na.ssl-images-amazon.com/images/I/51eqZ7o8PUL._SX326_BO1,204,203,200_.jpg" width="45%" style="float: left; margin-right: 10px;" />
+  <img class="col one" src="http://www.predictiveanalyticsworld.com/book/images/siegel-book-cover2.jpg" width="45%" style="float: left;" />
+</div>
 
 Now I've read those 7 books and it will make next year's target will be 7 books.
 By the way, from those books, my 3 favorites are **Mindset: The New Psychology of Success**, **The Manager: Inside the Minds of Football's Leaders**,
 and **Naked Statistics**.
 
-## 2. Getting better at machine learning
+### 2. Getting better at machine learning
 
 This one is related to what I'm doing in the office. Machine learning is one of our responsibilites.
 To be honest, I don't have any experience on this area, that's why I mainly contributed on the engineering part,

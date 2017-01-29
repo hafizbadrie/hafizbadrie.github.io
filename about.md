@@ -1,11 +1,12 @@
 ---
-title: About Me
-layout: post
+layout: page
+title: about me
 permalink: /about/
 ---
 
-<img src="http://hafizbadrie.com/images/hbl-landscape.png" width="100%" />
+<img class="col one right" src="http://hafizbadrie.com/images/hbl-portrait.png">
 
+<br/>
 Hi people!
 
 My name is Hafiz Badrie Lubis and I always describe my self as a passionate software engineer, [Incubus](http://www.incubushq.com){:target="_blank"} and [Chelsea FC](http://www.chelseafc.com){:target="_blank"} big fan,
@@ -18,3 +19,13 @@ I've been moving around to look on the suitable platforms for me to write and I,
 If you're keen to know more about past articles that I wrote, you can go to [my wordpress page](https://hafizbadrie.wordpress.com){:target="_blank"}. But, I assure you that it will not be updated anymore.
 
 I hope you enjoy your time here, have a nice day!
+
+
+<br/>
+<hr/>
+<br/>
+<span class="contacticon center">
+	<a href="https://github.com/hafizbadrie" target="_blank"><i class="fa fa-github-square"></i></a>
+	<a href="https://www.linkedin.com/in/hafizbadrie" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+	<a href="https://twitter.com/hafizbadrie" target="_blank"><i class="fa fa-twitter-square"></i></a>
+</span>

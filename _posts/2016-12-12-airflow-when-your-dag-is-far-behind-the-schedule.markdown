@@ -12,7 +12,7 @@ sometimes we have to deal with unexpected problems that affecting the job's sche
 but what if it's left behind for hours or even days? It's frustrating. We're aware that there's no easy way to deal with this situation, it still requires effort and time.
 So, this time, I would like to share about our effort to, at least, make it less painful.
 
-## Airflow components
+### Airflow components
 
 To give you a little bit of context, airflow actually have so many important components,
 but to simplify my explanation I will only talk about **DAG**, **Task Instance**, **Scheduler**, **Worker**.
@@ -28,11 +28,18 @@ The part of airflow that allow us to execute programs remotely is known as **air
 
 Below is the example of a DAG contains so many task instances and designed in quite complex manner.
 
-![Example of DAG](http://nerds.airbnb.com/wp-content/uploads/2015/06/Screen-Shot-2015-05-28-at-11.13.01-AM.png)
+<div class="img_row">
+  <a href="http://nerds.airbnb.com/wp-content/uploads/2015/06/Screen-Shot-2015-05-28-at-11.13.01-AM.png" target="_blank">
+    <img class="col three" src="http://nerds.airbnb.com/wp-content/uploads/2015/06/Screen-Shot-2015-05-28-at-11.13.01-AM.png">
+  </a>
+</div>
+<div class="col three caption">
+  Example of DAG
+</div>
 
 If you want to have a deeper knowledge about airflow, you can go to [this page](https://airflow.incubator.apache.org/concepts.html){:target="_blank"}.
 
-## How do we use airflow?
+### How do we use airflow?
 
 As I mentioned earlier, we mainly use this platform to execute our ETL.
 At first, our ETLs were registered as cron jobs. However, we found it hard to manage and monitor the status of the jobs.
@@ -47,7 +54,7 @@ Not only for ETL, now we use it for any processes that should run with schedule 
 We also made it scalable by utilising the **airflow worker**. It relies on [celery](http://www.celeryproject.org){:target="_blank"} as a message channel between instances.
 With that, we have **4 instances** to work on all of our tasks under those 46 DAGs.
 
-## Why do I get a DAG behind the actual schedule?
+### Why do I get a DAG behind the actual schedule?
 
 The main task of **airflow scheduler** is to create a **DAG run**. **DAG run** will create a record that allow the task executor to know that it can execute the tasks, otherwise the worker will do nothing.
 So, what will happen if a DAG run is marked as **fail**? Well, it depends on your DAG configuration.
@@ -65,7 +72,7 @@ So, should I just wait for it to catch up with the schedule? You can do that, bu
 
 So, what would I do then?
 
-## Let's accelerate the DAG run execution!
+### Let's accelerate the DAG run execution!
 
 Let's say, I have a DAG named `users_etl` that contains only 1 task. The task goal is to aggregate the user information based on **time** and **platform**. It's scheduled to be executed in every **5 minutes**.
 One day, my DAG was scheduled to run at 12:00 PM, but then marked as fail for some reasons.
@@ -96,7 +103,7 @@ To create the record, you can do it from airflow web interface.
 
 I understand that to do those steps also require some amount of time, but it's still a lot less than waiting for it catches the schedule by itself.
 
-## Advices
+### Advices
 
 Airflow is a great tool with important features to manage scheduled jobs and I found it very useful for us.
 Despite of some challenges that we faced when using airflow, I think it's one of many ways to master the tool.

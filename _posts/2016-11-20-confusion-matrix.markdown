@@ -105,7 +105,7 @@ These are the metrics that I'm talking about.
 Aside from those 4 metrics, there are actually 2 metrics more like **F-Measure** and **B-Acc**. However, I won't cover it in this post,
 as I'm still trying to undestand it comprehensively.
 
-## Try It Out
+### Try It Out
 
 I think it will be very interesting if we can practice it with a bigger dataset.
 So, let's practice our understanding about those 4 metrics with [this data](http://hafizbadrie.com/archives/2016/11/test-result.csv){:target="_blank"}.
